@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const api = require('../helpers/UDH_apiClient');
+const api = require('../utils/UDH_apiClient');
 const logger = require('../utils/logger');
 const payloads = require('../utils/payloads');
 const validate = require('../utils/responseverification');
