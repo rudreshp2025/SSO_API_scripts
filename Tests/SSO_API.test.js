@@ -1032,7 +1032,7 @@ test("Newsletter subscription - Invalid secret key",{tag: ['@regression','@Newsl
 test("forgotpassword and Reset password",{tag: ['@sanity','@regression','@forgot_reset_password'],timeout : 60000},async () => {
   logger.log("Initiated forgot password check");
 
-  const payload = payloads.forgotpassword({email : "dayseight26@gmail.com"});
+  const payload = payloads.forgotpassword({email : "mediamewatch@gmail.com"});
 
   const response = await api.post("api/api/auth0/profile/forgot_password",payload);
 
@@ -1107,7 +1107,7 @@ test("forgotpassword - deleted user",{tag: ['@regression','@forgot_reset_passwor
 test("Reset password - Error occured",{tag: ['@regression','@forgot_reset_password'],timeout : 60000},async () => {
   logger.log("Initiated forgot password - Error occured check in reset passsword");
 
-  const payload = payloads.forgotpassword({email :"newsasiac@gmail.com"});
+  const payload = payloads.forgotpassword({email :"eightworldappln@gmail.com"});
 
   const response = await api.post("api/api/auth0/profile/forgot_password",payload);
 
